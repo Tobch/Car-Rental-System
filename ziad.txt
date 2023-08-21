@@ -1,0 +1,20 @@
+NAME: ziad
+PHONE: 0100892191
+IC: 3214
+CAR: PDC602
+BRAND: PROTON
+MODEL: SAGA
+HOUR: 40
+PAYMENT: 242
+DATE: 07/08/2023 TIME: 15:17:42
+==========================================================
+NAME: ziad
+PHONE: 0100892191
+IC: 3214
+CAR: PDC602
+BRAND: PROTON
+MODEL: SAGA
+HOUR: 33
+PAYMENT: 222
+DATE: 07/08/2023 TIME: 19:19:16
+==========================================================

@@ -1,0 +1,20 @@
+NAME: user
+PHONE: 98797923334
+IC: 234
+CAR: PJG9337
+BRAND: JACK
+MODEL: VIVA
+HOUR: 17
+PAYMENT: 60
+DATE: 07/07/2023 TIME: 14:02:11
+==========================================================
+NAME: user
+PHONE: 98797923334
+IC: 234
+CAR: PJG9337
+BRAND: PERODUA
+MODEL: VIVA
+HOUR: 17
+PAYMENT: 60
+DATE: 07/08/2023 TIME: 17:05:58
+==========================================================

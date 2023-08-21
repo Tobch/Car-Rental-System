@@ -1,0 +1,45 @@
+NAME: tabbash
+PHONE: 01009077422
+IC: 12234
+CAR: TOB123
+BRAND: HONDA
+MODEL: CIVIC
+HOUR: 12
+PAYMENT: 180
+DATE: 07/08/2023 TIME: 15:03:54
+==========================================================
+NAME: tabbash
+PHONE: 01009077422
+IC: 12234
+DATE: 07/08/2023 TIME: 17:03:46
+==========================================================
+NAME: tabbash
+PHONE: 01009077422
+IC: 1234
+CAR: ABC124
+BRAND: SHAZIQ
+MODEL: AZIM
+HOUR: 70
+PAYMENT: 280
+DATE: 09/08/2023 TIME: 13:29:15
+==========================================================
+NAME: tabbash
+PHONE: 01009077422
+IC: 1234
+CAR: DAT9372
+BRAND: PERODUA
+MODEL: MYVI
+HOUR: 14
+PAYMENT: 84
+DATE: 09/08/2023 TIME: 13:29:43
+==========================================================
+NAME: tabbash
+PHONE: 01009077422
+IC: 12234
+CAR: JHR1609
+BRAND: PROTON
+MODEL: WIRA
+HOUR: 50
+PAYMENT: 594
+DATE: 10/08/2023 TIME: 20:55:07
+==========================================================

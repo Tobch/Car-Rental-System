@@ -1,0 +1,10 @@
+NAME: maiya
+PHONE: 567890
+IC: 098765
+CAR: FCK321
+BRAND: Mitsubish
+MODEL: LANCER
+HOUR: 11
+PAYMENT: 770
+DATE: 20/08/2023 TIME: 13:49:45
+==========================================================
