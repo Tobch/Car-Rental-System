@@ -1,9 +1,6 @@
-// Ahmed Mohamed El Sayed Tabbash 20P1076
-//Khalid Mohammad Saleh 16P8236
-//Emad ahmed shehata 21p0038
 // this code runs all the requirements for modules 1&2&3&4&5 except the average rental time
 // it wont work without the txt.files
-#include <iostream>
+#include <iostream>//declares objects that control reading from and writing to the standard streams
 #include <conio.h>// it takes input from keyboard and displays it on screen
 #include <fstream>//allowing you to read from and write to files
 #include <windows.h>//used to access the Win32 API functions and it makes it easier for the user to use the in-built functionality.
@@ -315,7 +312,7 @@ void load_EXIT()
     system("cls");
 }
 
-void GotoXY(int x, int y)
+void GotoXY(int x, int y) //to move the cursor to a specific position on the console screen.
 {
     HANDLE a;
     COORD b;
@@ -944,7 +941,7 @@ void newCarData()
 
 	cout << "\n\t  |\t\t\t\t\t  Plate Number : ";
 	cin >> ws;//tells the compiler to ignore buffer and also to discard all the whitespaces before the actual content of string or character array
-	cin.getline(rent[newCar].plate_num,10);
+	cin.getline(rent[newCar].plate_num,10);//allows accepting and reading single and multiple line strings from the input stream
 	ofs << rent[newCar].plate_num;
 	ofs << " ";
 
@@ -1061,8 +1058,8 @@ void resetAvail()
 
 
 	ofs.close();
-	remove("available.txt");
-	rename("temp2.txt","available.txt");
+	remove("available.txt"); //deletes a specified file
+	rename("temp2.txt","available.txt");//renames the file represented by the string pointed to by oldname to the string pointed to by newname
 
 	admin();
 
@@ -1071,7 +1068,7 @@ void resetAvail()
 void newUserPass()
 {
 	Boarder();
-	ofstream ofs;
+	ofstream ofs;//used to create files and to write information to files
 	ofs.open("UserPass.txt", fstream::app);
 
 	userPass[countUser()].ID = countUser()+1;
@@ -1171,19 +1168,19 @@ void carData ()
 
 	while(!ifs.eof())
 	{
-		ifs.getline(rent[carNum].plate_num,10,' ');
-		ifs.getline(rent[carNum].brand,20,' ');
-		ifs.getline(rent[carNum].model,20,' ');
-		ifs >> rent[carNum].capacity;
-		ifs.ignore();
-		ifs.getline(rent[carNum].colour,20,' ');
-		ifs >> rent[carNum].rate_per_hour;
-		ifs.ignore();
-		ifs >> rent[carNum].rate_per_half;
-		ifs.ignore();
-		ifs >> rent[carNum].rate_per_day;
-		ifs.ignore();
-		ifs.getline(rent[carNum].transmission,6);
+		ifs.getline(rent[carNum].plate_num,10,' ');//used to read a line of text from a file and store it into a character array or string variable
+		ifs.getline(rent[carNum].brand,20,' ');//used to read a line of text from a file and store it into a character array or string variable
+		ifs.getline(rent[carNum].model,20,' ');//used to read a line of text from a file and store it into a character array or string variable
+		ifs >> rent[carNum].capacity;// used for extracting data from an input stream
+		ifs.ignore();// function is used to skip over a specified number of characters or a specific delimiter in the input stream
+		ifs.getline(rent[carNum].colour,20,' ');//used to read a line of text from a file and store it into a character array or string variable
+		ifs >> rent[carNum].rate_per_hour;// used for extracting data from an input stream
+		ifs.ignore();// function is used to skip over a specified number of characters or a specific delimiter in the input stream
+		ifs >> rent[carNum].rate_per_half;// used for extracting data from an input stream
+		ifs.ignore();// function is used to skip over a specified number of characters or a specific delimiter in the input stream
+		ifs >> rent[carNum].rate_per_day;// used for extracting data from an input stream
+		ifs.ignore();// function is used to skip over a specified number of characters or a specific delimiter in the input stream
+		ifs.getline(rent[carNum].transmission,6);//used to read a line of text from a file and store it into a character array or string variable
 		carNum++;
 		ifs>>ws;//tells the compiler to ignore buffer and also to discard all the whitespaces before the actual content of string or character array
 	}
@@ -1377,9 +1374,9 @@ void delCar()
 	int x=carCount();
 	for(int i = 0; i < carCount(); i++)
 	{
-		if (strcmp(plate,rent[i].plate_num) != 0)
+		if (strcmp(plate,rent[i].plate_num) != 0)//used to compare two strings lexicographically, character by character. It returns an integer value that indicates the result of the comparison:
 		{
-			ofs << rent[i].plate_num;
+			ofs << rent[i].plate_num;// used to write values of variables or literals to the output stream.
 			ofs << " ";
 			ofs << rent[i].brand;
 			ofs << " ";
@@ -1451,3 +1448,4 @@ main()
 
 
 }
+
